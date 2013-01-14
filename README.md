@@ -23,6 +23,11 @@ If you do not have it, install using:
 
 `pear install --onlyreqdeps HTTP_Request2`
 
+You also need php-posix on your system in order for process forking to work. If you get an error saying "Call to undefined function posix_setsid()",
+install it using:
+`yum install php-posix`
+
+
 ###Installation<hr />
 1. Place CloudFront.php and invalidateObjects.php in any folder. If you intend to run the tool from anywhere, i would suggest copying the files in your
 /usr/local/bin folder.
