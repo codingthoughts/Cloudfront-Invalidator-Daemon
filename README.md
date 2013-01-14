@@ -40,4 +40,7 @@ You are good to go now.
 Usage is very simple and self explanatory. Simply run it like this:
 `invalidateObjects.php /path1/image1 /path2/image2 /path3/image3`
 
-and it will take care of the rest. Enjoy!!!
+If you want to run the tool from another program i.e. PHP or PERL, you can redirect the STDOUT & STDERR to /dev/null so that the caller does not wait for the tool to finish execution.
+something like `invalidateObjects.php /path1/image1 /path2/image2 /path3/image3 >/dev/null 2>/dev/null` would work for that purpose.
+
+Enjoy!!!
